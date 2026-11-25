@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Umesh AI — Physics Tutor</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <header class="header">
+      <div class="logo">
+        <div class="logo-icon">⚛️</div>
+        <div>
+          <h1>Umesh AI</h1>
+          <p>Physics Tutor</p>
+        </div>
+      </div>
+      <button class="clear-btn" onclick="clearChat()" title="Clear chat">🗑️</button>
+    </header>
+
+    <div class="chat" id="chat">
+      <div class="message ai">
+        <div class="bubble">
+          Namaste! Main Umesh AI hoon. Koi bhi physics sawal poocho — main answer dunga. 🚀
+        </div>
+      </div>
+    </div>
+
+    <div class="input-area">
+      <textarea id="input" placeholder="Physics sawal likho..." rows="1"
+        onkeydown="if(event.key==='Enter' && !event.shiftKey){event.preventDefault();sendMessage();}"></textarea>
+      <button id="sendBtn" onclick="sendMessage()">➤</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
